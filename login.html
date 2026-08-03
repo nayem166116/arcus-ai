@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — Arcus</title>
+<meta name="description" content="Log in to your Arcus workspace.">
+<link rel="icon" href="assets/img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/01-tokens.css">
+<link rel="stylesheet" href="assets/css/02-reset.css">
+<link rel="stylesheet" href="assets/css/03-base.css">
+<link rel="stylesheet" href="assets/css/04-layout.css">
+<link rel="stylesheet" href="assets/css/05-components.css">
+<link rel="stylesheet" href="assets/css/06-utilities.css">
+<link rel="stylesheet" href="assets/css/07-pages.css">
+<link rel="stylesheet" href="assets/css/08-responsive.css">
+</head>
+<body>
+<div class="auth-shell">
+  <div class="auth-topbar"><a href="index.html" aria-label="Arcus home"><img src="assets/img/logo.png" alt="Arcus" style="height:26px;"></a></div>
+  <div class="auth-main">
+    <div class="auth-form-col">
+      <div class="auth-card">
+        <h1 class="t-h2">Welcome back</h1>
+        <p class="t-body u-muted u-mt-2">Log in to your Arcus workspace.</p>
+
+        <div class="auth-sso u-mt-6">
+          <button type="button" class="btn btn--outline btn--block"><i class="fa-brands fa-google" aria-hidden="true"></i> Continue with Google</button>
+          <button type="button" class="btn btn--outline btn--block"><i class="fa-brands fa-microsoft" aria-hidden="true"></i> Continue with Microsoft</button>
+        </div>
+        <div class="auth-divider"><span>OR</span></div>
+
+        <div class="auth-alert auth-alert--error js-login-alert" id="login-alert" style="display:none;"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><span class="js-login-alert-text"></span></div>
+
+        <form class="js-auth-form" data-mode="login" novalidate>
+          <div class="l-stack--md">
+            <div class="form-field js-field" data-required data-type="email">
+              <label class="form-field__label" for="login-email">Work email</label>
+              <input id="login-email" class="input" type="email" placeholder="you@company.com" autocomplete="email">
+              <div class="form-field__error"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><span>Enter a valid email address.</span></div>
+            </div>
+            <div class="form-field js-field" data-required data-type="password">
+              <label class="form-field__label" for="login-password">Password</label>
+              <div class="auth-password-wrap">
+                <input id="login-password" class="input" type="password" placeholder="Enter your password" autocomplete="current-password">
+                <button type="button" class="auth-password-toggle js-auth-password-toggle" aria-label="Show password"><i class="fa-solid fa-eye" aria-hidden="true"></i></button>
+              </div>
+              <div class="form-field__error"><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i><span>Password must be at least 8 characters.</span></div>
+            </div>
+            <div class="auth-row-between">
+              <label class="checkbox-row"><input type="checkbox" checked> Remember me</label>
+              <a class="t-link t-caption" href="#" data-modal-open="forgot-password-modal">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--block"><span class="js-btn-label">Log in</span></button>
+          </div>
+        </form>
+        <p class="auth-footer-text">Don't have an account? <a class="t-link" href="register.html">Start free</a></p>
+      </div>
+    </div>
+    <div class="auth-proof-col">
+      <span class="badge badge--primary">SOC 2 Type II certified</span>
+      <p class="quote quote--inverse u-mt-4">"We put Arcus on our ticket triage queue in one afternoon. Three weeks later it was resolving seven out of ten tickets end to end."</p>
+      <div class="quote__attribution">
+        <img class="avatar avatar--md" src="assets/img/avatar-mira-adeyemi.png" alt="">
+        <div class="quote__attribution-text">Mira Adeyemi · Director of Support Operations, Northbeam</div>
+      </div>
+      <div class="auth-proof-stats">
+        <div class="stat stat--inverse"><div class="stat__value">63%</div><div class="stat__label">Faster first response</div></div>
+        <div class="stat stat--inverse"><div class="stat__value">99.95%</div><div class="stat__label">Platform uptime</div></div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer footer--auth">
+    <div class="l-container footer__bottom" style="border-top:none;margin-top:0;padding-top:0;">
+      <span class="t-caption">© 2026 Arcus Labs, Inc.</span>
+      <div class="footer__bottom-links"><a class="t-caption" href="privacy.html">Privacy</a><a class="t-caption" href="terms.html">Terms</a></div>
+    </div>
+  </footer>
+</div>
+
+<div class="modal-backdrop" id="forgot-password-modal">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="forgot-title">
+    <button class="modal__close" data-modal-close aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <h2 class="modal__title" id="forgot-title">Reset your password</h2>
+    <p class="modal__body">Enter your work email and we'll send a reset link (demo only — no email is actually sent).</p>
+    <div class="form-field u-mt-4"><input class="input" type="email" placeholder="you@company.com"></div>
+    <div class="modal__actions">
+      <button class="btn btn--ghost" data-modal-close>Cancel</button>
+      <button class="btn btn--primary" data-modal-close>Send reset link</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/toast.js"></script>
+<script src="assets/js/auth-mock.js"></script>
+</body>
+</html>

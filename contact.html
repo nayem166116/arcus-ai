@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact — Arcus</title><meta name="description" content="Get in touch with the Arcus team."><link rel="icon" href="assets/img/icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="assets/css/01-tokens.css"><link rel="stylesheet" href="assets/css/02-reset.css"><link rel="stylesheet" href="assets/css/03-base.css"><link rel="stylesheet" href="assets/css/04-layout.css"><link rel="stylesheet" href="assets/css/05-components.css"><link rel="stylesheet" href="assets/css/06-utilities.css"><link rel="stylesheet" href="assets/css/07-pages.css"><link rel="stylesheet" href="assets/css/08-responsive.css"></head>
+<body>
+<a class="u-sr-only skip-link" href="#main">Skip to main content</a>
+<header class="nav js-nav"><div class="l-container nav__inner"><div class="nav__left"><a href="index.html" class="nav__brand" aria-label="Arcus home"><img src="assets/img/logo.png" alt="Arcus"></a><nav class="nav__links" aria-label="Primary"><a class="nav__link" href="features.html">Product</a><a class="nav__link" href="pricing.html">Pricing</a><a class="nav__link" href="customers.html">Customers</a><a class="nav__link" href="blog.html">Resources</a><a class="nav__link" href="about.html">About</a></nav></div><div class="nav__right"><a class="btn btn--ghost btn--sm u-hidden-mobile" href="login.html">Log in</a><a class="btn btn--primary btn--sm" href="register.html">Start free</a><button class="nav__toggle js-nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button></div></div><div class="nav__drawer js-nav-drawer"><div class="nav__drawer-cta"><a class="btn btn--outline btn--block" href="login.html">Log in</a><a class="btn btn--primary btn--block" href="register.html">Start free</a></div></div></header>
+<main id="main">
+  <section class="l-section"><div class="l-container l-split l-split--6-6">
+    <div><span class="t-overline">Contact</span><h1 class="t-h2">Let's talk about your workflows</h1><p class="t-body u-muted u-mt-3">Tell us what you're trying to automate. Our team typically replies within one business day.</p>
+      <div class="l-stack u-mt-8">
+        <div class="l-cluster"><i class="fa-solid fa-envelope" style="color:var(--color-primary);" aria-hidden="true"></i><span class="t-body">hello@arcus.com</span></div>
+        <div class="l-cluster"><i class="fa-solid fa-headset" style="color:var(--color-primary);" aria-hidden="true"></i><span class="t-body">support@arcus.com</span></div>
+        <div class="l-cluster"><i class="fa-solid fa-shield-halved" style="color:var(--color-primary);" aria-hidden="true"></i><span class="t-body">security@arcus.com</span></div>
+      </div>
+    </div>
+    <div class="card card--lg">
+      <form class="js-contact-form" novalidate>
+        <div class="form-field"><label class="form-label" for="c-name">Full name</label><input class="form-input" type="text" id="c-name" name="name" required><div class="form-error" data-error-for="c-name"></div></div>
+        <div class="form-field"><label class="form-label" for="c-email">Work email</label><input class="form-input" type="email" id="c-email" name="email" required><div class="form-error" data-error-for="c-email"></div></div>
+        <div class="form-field"><label class="form-label" for="c-company">Company</label><input class="form-input" type="text" id="c-company" name="company" required><div class="form-error" data-error-for="c-company"></div></div>
+        <div class="form-field"><label class="form-label" for="c-message">How can we help?</label><textarea class="form-input form-textarea" id="c-message" name="message" rows="4" required></textarea><div class="form-error" data-error-for="c-message"></div></div>
+        <button class="btn btn--primary btn--block js-submit-btn" type="submit">Send message</button>
+      </form>
+    </div>
+  </div></section>
+</main>
+<footer class="footer"><div class="l-container"><div class="footer__bottom" style="margin-top:0;border-top:none;padding-top:0;"><span>© 2026 Arcus Labs, Inc.</span><div class="footer__bottom-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a></div></div></div></footer>
+<script src="assets/js/nav.js"></script><script src="assets/js/toast.js"></script><script src="assets/js/forms.js"></script>
+</body></html>

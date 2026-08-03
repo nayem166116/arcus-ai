@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Utilities (kept intentionally small)
+   ========================================================================== */
+.u-flex { display: flex; }
+.u-flex-col { display: flex; flex-direction: column; }
+.u-items-center { align-items: center; }
+.u-justify-center { justify-content: center; }
+.u-gap-1 { gap: var(--space-1); }
+.u-gap-2 { gap: var(--space-2); }
+.u-gap-3 { gap: var(--space-3); }
+.u-gap-4 { gap: var(--space-4); }
+.u-w-full { width: 100%; }
+.u-relative { position: relative; }
+.u-radius-lg { border-radius: var(--radius-lg); }
+.u-border { border: 1px solid var(--color-border); }
+.u-shadow-xs { box-shadow: var(--shadow-xs); }
+.u-overflow-hidden { overflow: hidden; }
+
+/* ---- Centered-heading fix ----
+   .t-h2 / .t-display set their own max-width, so inside centered sections
+   they need margin-inline: auto too, or they stay flush to the left edge
+   while the text-align: center only centers text *inside* the box. ---- */
+.u-text-center h1,
+.u-text-center h2,
+.u-text-center h3,
+.u-text-center .t-h1,
+.u-text-center .t-h2,
+.u-text-center .t-h3,
+.u-text-center .t-display,
+.l-header h1,
+.l-header h2,
+.l-header h3,
+.l-header .t-h1,
+.l-header .t-h2,
+.l-header .t-h3,
+.l-header .t-display,
+.cta-band h1,
+.cta-band h2,
+.cta-band h3,
+.cta-band .t-h1,
+.cta-band .t-h2,
+.cta-band .t-h3,
+.cta-band .t-display {
+  margin-left: auto;
+  margin-right: auto;
+}

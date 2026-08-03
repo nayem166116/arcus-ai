@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Arcus</title>
+<meta name="description" content="Simple, transparent pricing for Arcus AI agents. Start free, then pay per active agent as your team scales.">
+<link rel="icon" href="assets/img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/01-tokens.css">
+<link rel="stylesheet" href="assets/css/02-reset.css">
+<link rel="stylesheet" href="assets/css/03-base.css">
+<link rel="stylesheet" href="assets/css/04-layout.css">
+<link rel="stylesheet" href="assets/css/05-components.css">
+<link rel="stylesheet" href="assets/css/06-utilities.css">
+<link rel="stylesheet" href="assets/css/07-pages.css">
+<link rel="stylesheet" href="assets/css/08-responsive.css">
+</head>
+<body>
+<a class="u-sr-only skip-link" href="#main">Skip to main content</a>
+<div class="nav-announce js-nav-announce">
+  <span><i class="fa-solid fa-sparkles" aria-hidden="true"></i>&nbsp; Arcus now supports multi-agent handoffs. <a href="changelog.html">See what's new →</a></span>
+  <button class="nav-announce__close js-announce-close" aria-label="Dismiss announcement"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+</div>
+<header class="nav js-nav">
+  <div class="l-container nav__inner">
+    <div class="nav__left">
+      <a href="index.html" class="nav__brand" aria-label="Arcus home"><img src="assets/img/logo.png" alt="Arcus"></a>
+      <nav class="nav__links" aria-label="Primary">
+        <div class="nav__item js-nav-item">
+          <button class="nav__link js-nav-trigger" aria-haspopup="true" aria-expanded="false">Product <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+          <div class="nav__panel nav__panel--mega">
+            <a class="nav__panel-link" href="features.html"><div class="nav__panel-link__title"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i>&nbsp; Features</div><div class="nav__panel-link__desc">What Arcus agents can do</div></a>
+            <a class="nav__panel-link" href="integrations.html"><div class="nav__panel-link__title"><i class="fa-solid fa-plug" aria-hidden="true"></i>&nbsp; Integrations</div><div class="nav__panel-link__desc">Connect your existing tools</div></a>
+            <a class="nav__panel-link" href="security.html"><div class="nav__panel-link__title"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>&nbsp; Security</div><div class="nav__panel-link__desc">Compliance and data controls</div></a>
+            <a class="nav__panel-link" href="blueprint-generator.html"><div class="nav__panel-link__title"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>&nbsp; Blueprint Generator</div><div class="nav__panel-link__desc">Free agent planning tool</div></a>
+            <a class="nav__panel-link" href="pricing.html"><div class="nav__panel-link__title"><i class="fa-solid fa-tag" aria-hidden="true"></i>&nbsp; Pricing</div><div class="nav__panel-link__desc">Plans for every team size</div></a>
+            <a class="nav__panel-link" href="changelog.html"><div class="nav__panel-link__title"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>&nbsp; Changelog</div><div class="nav__panel-link__desc">Latest releases</div></a>
+          </div>
+        </div>
+        <div class="nav__item js-nav-item">
+          <button class="nav__link js-nav-trigger" aria-haspopup="true" aria-expanded="false">Solutions <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+          <div class="nav__panel nav__panel--simple">
+            <a class="nav__panel-link" href="use-cases.html">All use cases</a>
+            <a class="nav__panel-link" href="use-case-support.html">Support</a>
+            <a class="nav__panel-link" href="use-case-sales-ops.html">Sales Ops</a>
+            <a class="nav__panel-link" href="use-case-it.html">IT</a>
+          </div>
+        </div>
+        <a class="nav__link is-active" href="pricing.html">Pricing</a>
+        <a class="nav__link" href="customers.html">Customers</a>
+        <a class="nav__link" href="blog.html">Resources</a>
+        <a class="nav__link" href="about.html">About</a>
+      </nav>
+    </div>
+    <div class="nav__right">
+      <a class="btn btn--ghost btn--sm u-hidden-mobile" href="login.html">Log in</a>
+      <a class="btn btn--primary btn--sm" href="register.html">Start free</a>
+      <button class="nav__toggle js-nav-toggle" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+    </div>
+  </div>
+  <div class="nav__drawer js-nav-drawer" id="nav-drawer">
+    <div class="nav__drawer-item js-drawer-item">
+      <button class="nav__drawer-trigger js-drawer-trigger">Product <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+      <div class="nav__drawer-panel">
+        <a href="features.html">Features</a>
+        <a href="integrations.html">Integrations</a>
+        <a href="security.html">Security</a>
+        <a href="blueprint-generator.html">Blueprint Generator</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="changelog.html">Changelog</a>
+      </div>
+    </div>
+    <div class="nav__drawer-item js-drawer-item">
+      <button class="nav__drawer-trigger js-drawer-trigger">Solutions <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+      <div class="nav__drawer-panel">
+        <a href="use-cases.html">All use cases</a>
+        <a href="use-case-support.html">Support</a>
+        <a href="use-case-sales-ops.html">Sales Ops</a>
+        <a href="use-case-it.html">IT</a>
+      </div>
+    </div>
+    <div class="nav__drawer-item"><a class="nav__drawer-trigger" href="customers.html" style="display:block;">Customers</a></div>
+    <div class="nav__drawer-item"><a class="nav__drawer-trigger" href="blog.html" style="display:block;">Resources</a></div>
+    <div class="nav__drawer-item"><a class="nav__drawer-trigger" href="about.html" style="display:block;">About</a></div>
+    <div class="nav__drawer-cta">
+      <a class="btn btn--outline btn--block" href="login.html">Log in</a>
+      <a class="btn btn--primary btn--block" href="register.html">Start free</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="l-section l-section--compact">
+    <div class="l-container u-text-center">
+      <span class="t-overline">Pricing</span>
+      <h1 class="t-h1">Plans that scale with how much work your agents take on</h1>
+      <p class="t-body-lg u-muted u-mt-4 u-measure" style="margin-inline:auto;">Every plan includes unlimited workflow drafts. You only pay for agents you actually put into production.</p>
+      <div class="segmented js-segmented u-mt-6" style="display:inline-flex;">
+        <button class="segmented__option js-segmented-option is-active" data-value="monthly">Monthly</button>
+        <button class="segmented__option js-segmented-option" data-value="annual">Annual <span class="badge badge--success" style="margin-left:6px;">Save 20%</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section l-section--compact">
+    <div class="l-container">
+      <div class="pricing-grid js-pricing-interval">
+        <div class="card card--lg pricing-card">
+          <div class="pricing-card__name">Free</div>
+          <div class="pricing-card__price"><span class="pricing-card__price-value">$0</span><span class="pricing-card__price-unit">/month</span></div>
+          <div class="pricing-card__line">For trying Arcus on one simple workflow.</div>
+          <ul class="pricing-card__features">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>1 active agent</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>100 runs / month</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>3 tool connections</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>7-day run history</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Community support</li>
+          </ul>
+          <div class="pricing-card__cta"><a class="btn btn--outline btn--block" href="register.html">Start free</a></div>
+        </div>
+
+        <div class="card card--lg pricing-card pricing-card--featured">
+          <div class="pricing-card__name">Team</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__price-value js-price-value" data-monthly="$79" data-annual="$63">$79</span>
+            <span class="pricing-card__price-unit">/agent/month</span>
+          </div>
+          <div class="pricing-card__line js-price-line" data-monthly-line="Billed monthly" data-annual-line="Billed annually ($756/yr per agent)">Billed monthly</div>
+          <ul class="pricing-card__features">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Up to 10 active agents</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>10,000 runs / month included</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Unlimited tool connections</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>90-day run history</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Approval workflows & guardrails</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Priority email & chat support</li>
+          </ul>
+          <div class="pricing-card__cta"><a class="btn btn--primary btn--block" href="register.html">Start free trial</a></div>
+        </div>
+
+        <div class="card card--lg pricing-card">
+          <div class="pricing-card__name">Growth</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__price-value js-price-value" data-monthly="$149" data-annual="$119">$149</span>
+            <span class="pricing-card__price-unit">/agent/month</span>
+          </div>
+          <div class="pricing-card__line js-price-line" data-monthly-line="Billed monthly" data-annual-line="Billed annually ($1,428/yr per agent)">Billed monthly</div>
+          <ul class="pricing-card__features">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Unlimited active agents</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>100,000 runs / month included</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Multi-agent handoffs</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>1-year run history</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Role-based access control</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Dedicated onboarding</li>
+          </ul>
+          <div class="pricing-card__cta"><a class="btn btn--outline btn--block" href="contact.html">Talk to sales</a></div>
+        </div>
+
+        <div class="card card--lg pricing-card">
+          <div class="pricing-card__name">Enterprise</div>
+          <div class="pricing-card__price"><span class="pricing-card__price-value">Custom</span></div>
+          <div class="pricing-card__line">For complex, multi-team deployments.</div>
+          <ul class="pricing-card__features">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Unlimited runs & agents</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>SSO / SAML & SCIM provisioning</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Custom data retention</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Dedicated success manager</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>99.95% uptime SLA</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i>Custom security review</li>
+          </ul>
+          <div class="pricing-card__cta"><a class="btn btn--outline btn--block" href="contact.html">Contact sales</a></div>
+        </div>
+      </div>
+
+      <div class="callout callout--neutral u-mt-8">
+        <strong>What counts as a run?</strong> A run is one complete execution of an agent workflow, from trigger to final action or hand-off — whether it finishes automatically or pauses for your approval. Draft and test runs while building a workflow are always free and unlimited.
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section l-section--subtle">
+    <div class="l-container">
+      <div class="l-header"><h2 class="t-h2">Compare plans in detail</h2></div>
+      <div class="table-wrap table-wrap--responsive-cards">
+        <table class="table">
+          <thead><tr><th>Capability</th><th>Free</th><th>Team</th><th>Growth</th><th>Enterprise</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Capability">Active agents</td><td data-label="Free">1</td><td data-label="Team">10</td><td data-label="Growth">Unlimited</td><td data-label="Enterprise">Unlimited</td></tr>
+            <tr><td data-label="Capability">Included runs / month</td><td data-label="Free">100</td><td data-label="Team">10,000</td><td data-label="Growth">100,000</td><td data-label="Enterprise">Custom</td></tr>
+            <tr><td data-label="Capability">Approval workflows</td><td data-label="Free"><i class="fa-solid fa-minus"></i></td><td data-label="Team"><i class="fa-solid fa-check"></i></td><td data-label="Growth"><i class="fa-solid fa-check"></i></td><td data-label="Enterprise"><i class="fa-solid fa-check"></i></td></tr>
+            <tr><td data-label="Capability">Multi-agent handoffs</td><td data-label="Free"><i class="fa-solid fa-minus"></i></td><td data-label="Team"><i class="fa-solid fa-minus"></i></td><td data-label="Growth"><i class="fa-solid fa-check"></i></td><td data-label="Enterprise"><i class="fa-solid fa-check"></i></td></tr>
+            <tr><td data-label="Capability">Role-based access control</td><td data-label="Free"><i class="fa-solid fa-minus"></i></td><td data-label="Team"><i class="fa-solid fa-minus"></i></td><td data-label="Growth"><i class="fa-solid fa-check"></i></td><td data-label="Enterprise"><i class="fa-solid fa-check"></i></td></tr>
+            <tr><td data-label="Capability">SSO / SAML & SCIM</td><td data-label="Free"><i class="fa-solid fa-minus"></i></td><td data-label="Team"><i class="fa-solid fa-minus"></i></td><td data-label="Growth"><i class="fa-solid fa-minus"></i></td><td data-label="Enterprise"><i class="fa-solid fa-check"></i></td></tr>
+            <tr><td data-label="Capability">Run history retention</td><td data-label="Free">7 days</td><td data-label="Team">90 days</td><td data-label="Growth">1 year</td><td data-label="Enterprise">Custom</td></tr>
+            <tr><td data-label="Capability">Support</td><td data-label="Free">Community</td><td data-label="Team">Priority</td><td data-label="Growth">Priority + onboarding</td><td data-label="Enterprise">Dedicated CSM</td></tr>
+            <tr><td data-label="Capability">Uptime SLA</td><td data-label="Free"><i class="fa-solid fa-minus"></i></td><td data-label="Team"><i class="fa-solid fa-minus"></i></td><td data-label="Growth">99.9%</td><td data-label="Enterprise">99.95%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section">
+    <div class="l-container l-container--narrow">
+      <div class="l-header"><h2 class="t-h2">Pricing questions</h2></div>
+      <div class="js-accordion" data-single-open="false">
+        <div class="accordion__item js-accordion-item">
+          <button class="accordion__trigger js-accordion-trigger" aria-expanded="false">What counts as an "active agent"?<span class="accordion__icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span></button>
+          <div class="accordion__panel">An active agent is any workflow you've turned on to run automatically. Agents you're still drafting or testing don't count toward your plan limit.</div>
+        </div>
+        <div class="accordion__item js-accordion-item">
+          <button class="accordion__trigger js-accordion-trigger" aria-expanded="false">What happens if I go over my included runs?<span class="accordion__icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span></button>
+          <div class="accordion__panel">We'll notify you at 80% and 100% of your included runs. Extra runs are billed at a flat per-run overage rate, or you can upgrade at any time — your agents never just stop working.</div>
+        </div>
+        <div class="accordion__item js-accordion-item">
+          <button class="accordion__trigger js-accordion-trigger" aria-expanded="false">Can I switch plans later?<span class="accordion__icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span></button>
+          <div class="accordion__panel">Yes. You can upgrade, downgrade, or cancel at any time from your billing settings. Upgrades apply immediately; downgrades apply at the start of your next billing cycle.</div>
+        </div>
+        <div class="accordion__item js-accordion-item">
+          <button class="accordion__trigger js-accordion-trigger" aria-expanded="false">Do you offer nonprofit or startup discounts?<span class="accordion__icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span></button>
+          <div class="accordion__panel">Yes, we offer a 30% discount for registered nonprofits and early-stage startups under two years old. Reach out through our contact page to apply.</div>
+        </div>
+        <div class="accordion__item js-accordion-item">
+          <button class="accordion__trigger js-accordion-trigger" aria-expanded="false">Is there a setup fee?<span class="accordion__icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span></button>
+          <div class="accordion__panel">No. There are no setup fees on any plan, including Enterprise. Dedicated onboarding on Growth and Enterprise plans is included in your subscription.</div>
+        </div>
+        <div class="accordion__item js-accordion-item">
+          <button class="accordion__trigger js-accordion-trigger" aria-expanded="false">What payment methods do you accept?<span class="accordion__icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span></button>
+          <div class="accordion__panel">We accept all major credit cards for Free and Team plans. Growth and Enterprise plans can also pay by invoice with net-30 terms.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section l-section--cta cta-band">
+    <div class="l-container u-text-center">
+      <h2 class="t-h2 cta-band__title">Still deciding? Try the free blueprint generator first.</h2>
+      <p class="t-body-lg cta-band__body u-measure" style="margin-inline:auto;">See exactly what an agent would do on your workflow before you commit to a plan.</p>
+      <div class="l-cluster cta-band__actions">
+        <a class="btn btn--primary btn--lg" href="blueprint-generator.html">Generate a free blueprint</a>
+        <a class="btn btn--inverse-ghost btn--lg" href="contact.html">Talk to sales</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="l-container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo.png" alt="Arcus">
+        <p class="footer__desc">The AI agent workspace for operating teams. Reliable automation with a human in the loop.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Arcus on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Arcus on LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Arcus on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Arcus on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Product</div>
+        <a class="footer__link" href="features.html">Features</a>
+        <a class="footer__link" href="integrations.html">Integrations</a>
+        <a class="footer__link" href="security.html">Security</a>
+        <a class="footer__link" href="pricing.html">Pricing</a>
+        <a class="footer__link" href="blueprint-generator.html">Blueprint Generator</a>
+        <a class="footer__link" href="changelog.html">Changelog</a>
+      </div>
+      <div>
+        <div class="footer__col-title">Solutions</div>
+        <a class="footer__link" href="use-cases.html">All use cases</a>
+        <a class="footer__link" href="use-case-support.html">Support</a>
+        <a class="footer__link" href="use-case-sales-ops.html">Sales Ops</a>
+        <a class="footer__link" href="use-case-it.html">IT</a>
+      </div>
+      <div>
+        <div class="footer__col-title">Company</div>
+        <a class="footer__link" href="about.html">About</a>
+        <a class="footer__link" href="customers.html">Customers</a>
+        <a class="footer__link" href="blog.html">Blog</a>
+        <a class="footer__link" href="contact.html">Contact</a>
+      </div>
+      <div>
+        <div class="footer__col-title">Resources</div>
+        <a class="footer__link" href="blog.html">Blog</a>
+        <a class="footer__link" href="faq.html">FAQ</a>
+        <a class="footer__link" href="contact.html">Contact sales</a>
+        <a class="footer__link" href="login.html">Log in</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Arcus Labs, Inc. All rights reserved.</span>
+      <div class="footer__bottom-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="security.html">Security</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/accordion.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="assets/js/pricing-toggle.js"></script>
+<script src="assets/js/toast.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/reveal.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>
