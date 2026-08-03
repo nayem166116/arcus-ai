@@ -1,0 +1,135 @@
+/* ==========================================================================
+   Arcus Design Tokens
+   ========================================================================== */
+:root {
+  /* Brand */
+  --color-primary: #2563EB;
+  --color-primary-hover: #1D4ED8;
+  --color-primary-active: #1E40AF;
+  --color-primary-soft: #EFF4FF;
+  --color-primary-soft-border: #C7D9FE;
+  --color-primary-disabled: #A9C2F8;
+  --color-secondary: #0F172A;
+  --color-secondary-hover: #1E293B;
+  --color-secondary-active: #020617;
+
+  /* Neutral / Surface */
+  --color-bg: #FFFFFF;
+  --color-bg-subtle: #F8FAFC;
+  --color-bg-muted: #F1F5F9;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F8FAFC;
+  --color-surface-inverse: #0F172A;
+  --color-border: #E2E8F0;
+  --color-border-strong: #CBD5E1;
+  --color-border-inverse: #1E293B;
+
+  /* Text */
+  --color-text-heading: #0F172A;
+  --color-text-body: #334155;
+  --color-text-muted: #64748B;
+  --color-text-subtle: #94A3B8;
+  --color-text-inverse: #F8FAFC;
+  --color-text-inverse-muted: #94A3B8;
+  --color-text-link: #2563EB;
+  --color-text-on-primary: #FFFFFF;
+
+  /* Functional */
+  --color-success: #15803D;
+  --color-success-soft: #F0FDF4;
+  --color-success-border: #BBF7D0;
+  --color-warning: #B45309;
+  --color-warning-soft: #FFFBEB;
+  --color-warning-border: #FDE68A;
+  --color-danger: #B91C1C;
+  --color-danger-soft: #FEF2F2;
+  --color-danger-border: #FECACA;
+  --color-info: #2563EB;
+  --color-info-soft: #EFF4FF;
+
+  /* Overlay */
+  --color-overlay: rgba(15, 23, 42, 0.48);
+  --color-focus-ring: rgba(37, 99, 235, 0.35);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-display: 48px;
+  --lh-display: 53px;
+  --fs-h1: 38px;
+  --lh-h1: 44px;
+  --fs-h2: 28px;
+  --lh-h2: 35px;
+  --fs-h3: 20px;
+  --lh-h3: 27px;
+  --fs-h4: 16px;
+  --lh-h4: 22px;
+  --fs-body-lg: 16px;
+  --lh-body-lg: 26px;
+  --fs-body: 15px;
+  --lh-body: 24px;
+  --fs-body-sm: 14px;
+  --lh-body-sm: 22px;
+  --fs-caption: 13px;
+  --lh-caption: 19px;
+  --fs-overline: 11.5px;
+  --fs-mono: 13px;
+  --fs-mono-sm: 12px;
+
+  /* Spacing (4px base grid) */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-narrow: 760px;
+  --container-pad: 24px;
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
+
+  /* Shadow */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 8px 20px rgba(15, 23, 42, 0.08);
+  --shadow-focus: 0 0 0 3px var(--color-focus-ring);
+
+  /* Motion */
+  --dur-fast: 120ms;
+  --dur-base: 180ms;
+  --dur-slow: 260ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Component */
+  --btn-height-sm: 32px;
+  --btn-height-md: 38px;
+  --btn-height-lg: 44px;
+  --nav-height: 60px;
+  --nav-height-mobile: 56px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0.01ms;
+    --dur-base: 0.01ms;
+    --dur-slow: 0.01ms;
+  }
+}
